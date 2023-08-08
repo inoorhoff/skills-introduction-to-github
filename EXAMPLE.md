@@ -16,9 +16,6 @@ Here is a simple flow chart:
 
 ```mermaid
 flowchart LR;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+     A:::foo & B:::bar --> C:::foobar;
 ```
 
