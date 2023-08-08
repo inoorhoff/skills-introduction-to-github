@@ -15,7 +15,7 @@ flowchart LR;
 Here is a simple flow chart:
 
 ```mermaid
-graph TD;
+flowchart LR;
     A-->B;
     A-->C;
     B-->D;
