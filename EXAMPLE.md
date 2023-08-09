@@ -3,7 +3,6 @@
 This is a markdown test file.
 
 It contains a mermaid example
-
 ```mermaid
 flowchart LR;
     foo & bar --> foobar;
@@ -60,27 +59,21 @@ There is also TopoJSON:
 ```topojson
 {
   "type": "Topology",
-  "transform": {
-    "scale": [1.0, 1.0],
-    "translate": [0, 0]
-  },
   "objects": {
     "example": {
       "type": "GeometryCollection",
       "geometries": [
         {
-          "type": "Point",
-          "properties": {"prop0": "value0"},
-          "coordinates": [4.88702 , 52.40379]
-        },
-        {
-          "type": "Point",
-          "properties": {"prop0": "value0"},
-          "coordinates": [4.88661 , 52.40362]
+          "type": "Polygon",
+          "properties": {"prop0": "value0",
+            "prop1": {"this": "that"}
+          },
+          "arcs": [[0]]
         }
-]
-}
-}
+      ]
+    }
+  },
+  "arcs": [[[4.88702 , 52.40379],[4.88689 , 52.40384],[4.88661 , 52.40362],[4.88673 , 52.40356],[4.88702 , 52.40379]]]
 }
 ```
 
